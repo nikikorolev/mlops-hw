@@ -1,0 +1,24 @@
+[project]
+name = "mlops-hw-1-base"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Nikita Korolev", email = "niki.korolev@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "apache-airflow==3.3.1",
+    "apache-airflow-providers-http==6.0.5",
+    "apache-airflow-providers-postgres==7.0.2",
+    "numpy==2.5.1",
+    "pydantic>=2.14.1",
+    "pytest==9.1.1",
+]
+
+[project.scripts]
+mlops-hw-1-base = "mlops_hw_1_base:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
